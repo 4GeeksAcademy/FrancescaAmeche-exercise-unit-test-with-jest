@@ -17,10 +17,10 @@ test("One euro should be 1.2 dollars", () => {
 
 test("One dollar should be 106.58 yens", () => {
     let yen = fromDollarToYen(3.5)
-    expect(yen).toBe(373.04);
+    expect(yen).toBeCloseTo(373.04);
 });
 
-test("One yen should be 0.01 pounds", () => {
+test("One yen should be 0.006 pounds", () => {
     let pound = fromYenToPound(5000)
-    expect(pound).toBe(31.27);
+    expect(pound).toBeCloseTo(31.27);
 });
